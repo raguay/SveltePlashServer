@@ -43,7 +43,7 @@ const config = {
   backgroundType: 'pic',
   backgrounds: ['https://source.unsplash.com/random/1440x900?puppy', 
                 'https://source.unsplash.com/random/1440x900?kitten',
-                'https://source.unsplash.com/random/1440x900?hangglider',
+                'https://source.unsplash.com/random/1440x900?glider',
                 'https://source.unsplash.com/random/1440x900?galaxy',
                 'http://www.talencia.cat/mypics/max/1/16113_stars-backgrounds.png'],
   backgroundColors: ['background: linear-gradient(to left top, blue, red) fixed',

@@ -33,12 +33,9 @@
   let thirtyCount = 0;
 
   onMount(() => {
-    var unsubscribeSeconds = Seconds.subscribe((value)=>{
-    });
     UpdateTimeSeconds();
     UpdateTimeThirtyMinutes();
     return(() => {
-      unsubscribeSeconds();
     });
   });
 
@@ -48,10 +45,9 @@
       // use.
       //
       var ct = new Date();
-      var min = ct.getMinutes();
       Seconds.set({
         hours: ct.getHours(),
-        minutes: min
+        minutes: ct.getMinutes()
       });
       setTimeout(UpdateTimeSeconds, 1000);
   }

@@ -73,5 +73,8 @@
         background = setBackground(config);
       }
     });
+    return(() => {
+      unsubscribeThirtyMinute();
+    });
   });
 </script>
