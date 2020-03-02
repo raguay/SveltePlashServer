@@ -40,6 +40,9 @@
       getExchangeRate();
     });
     getExchangeRate();
+    return(() => {
+      unsubscribeThirtyMinute();
+    });
   });
 
   function getExchangeRate() {
@@ -53,9 +56,6 @@
     .then((data) => {
       savedAmount = round_to_precision(data.rates[config.to]/data.rates[config.from], 0.05);
       return(savedAmount);
-    });
-    return(() => {
-      unsubscribeThirtyMinute();
     });
   }
   
