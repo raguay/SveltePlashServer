@@ -1,6 +1,7 @@
 import UI from './UI.svelte';
 import Time from './components/Time.svelte';
 import CircleTime from './components/CircleTime.svelte';
+import Exchange from './components/Exchange.svelte';
 
 //
 // Create the configuration and widgets structures for configuring
@@ -8,6 +9,21 @@ import CircleTime from './components/CircleTime.svelte';
 // Well, other than creating new widgets!
 //
 const widgets = [{
+  name: 'Exchange',
+  widget: Exchange,
+  top: 220,
+  left: 35,
+  style: {
+    font: 'Alfa Slab One',
+    size: 30,
+    color: 'lightblue'
+  },
+  config: {
+    from: 'USD',
+    to: 'THB',
+    shadow: '1px 1px 0px black, 2px 2px 0px black, 3px 3px 0px black, 4px 4px 0px black, 5px 5px 0px black, 6px 6px 2px black'
+  }
+  },{
   name: 'Time',
   widget: Time,
   top: 145,
