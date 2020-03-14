@@ -54,7 +54,8 @@
       return response.json();
     })
     .then((data) => {
-      savedAmount = round_to_precision(data.rates[config.to]/data.rates[config.from], 0.005);
+      savedAmount = round_to_precision(data.rates[config.to]/data.rates[config.from], 0.001).toString();
+      savedAmount = savedAmount.slice(0,5);
       return(savedAmount);
     });
   }
