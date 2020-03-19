@@ -2,6 +2,8 @@ import UI from './UI.svelte';
 import Time from './components/Time.svelte';
 import CircleTime from './components/CircleTime.svelte';
 import Exchange from './components/Exchange.svelte';
+import Corvid19 from './components/Corvid19.svelte';
+import Text from './components/Text.svelte';
 
 //
 // Create the configuration and widgets structures for configuring
@@ -9,6 +11,45 @@ import Exchange from './components/Exchange.svelte';
 // Well, other than creating new widgets!
 //
 const widgets = [{
+  name: 'Corvd19Text',
+  widget: Text,
+  top: 300,
+  left: 35,
+  style: {
+    font: 'Alfa Slab One',
+    size: 30,
+    color: 'lightblue'
+  },
+  config: {
+    text: 'Corvid-19 Cases',
+    shadow: '1px 1px 0px black, 2px 2px 0px black, 3px 3px 0px black, 4px 4px 0px black, 5px 5px 0px black, 6px 6px 2px black'
+  }},{
+  name: 'Corvid19-US',
+  widget: Corvid19,
+  top: 380,
+  left: 35,
+  style: {
+    font: 'Alfa Slab One',
+    size: 30,
+    color: 'lightblue'
+  },
+  config: {
+    country: 'usa',
+    shadow: '1px 1px 0px black, 2px 2px 0px black, 3px 3px 0px black, 4px 4px 0px black, 5px 5px 0px black, 6px 6px 2px black'
+  }},{
+  name: 'Corvid19-Thailand',
+  widget: Corvid19,
+  top: 340,
+  left: 35,
+  style: {
+    font: 'Alfa Slab One',
+    size: 30,
+    color: 'lightblue'
+  },
+  config: {
+    country: 'thailand',
+    shadow: '1px 1px 0px black, 2px 2px 0px black, 3px 3px 0px black, 4px 4px 0px black, 5px 5px 0px black, 6px 6px 2px black'
+  }},{
   name: 'Exchange',
   widget: Exchange,
   top: 220,
