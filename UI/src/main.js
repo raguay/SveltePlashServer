@@ -14,7 +14,7 @@ const widgets = [{
   name: 'Corvd19Text',
   widget: Text,
   top: 300,
-  left: 35,
+  left: 100,
   style: {
     font: 'Alfa Slab One',
     size: 30,
