@@ -10,7 +10,7 @@
     {#await load}
       Loading...
     {:then data}
-      {corData.country} - Active: {corData.active} , Died: {corData.deaths}
+      {typeof data === 'undefined' ? corData.country : data.country} - Active: {typeof data === 'undefined' ?  corData.active : data.active} , Died: {typeof data === 'undefined' ?  corData.deaths : data.deaths}
     {:catch e}
       {corData.country} - Active: {corData.active} , Died: {corData.deaths}
 
@@ -77,7 +77,7 @@
     })
     .then((data) => {
       corData = data;
-      return(corData);
+      return(data);
     });
   }
 </script>
