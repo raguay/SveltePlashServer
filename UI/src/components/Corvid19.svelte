@@ -10,10 +10,12 @@
     {#await load}
       Loading...
     {:then data}
-      {typeof data === 'undefined' ? corData.country : data.country} - Active: {typeof data === 'undefined' ?  corData.active : data.active} , Died: {typeof data === 'undefined' ?  corData.deaths : data.deaths}
+      {typeof data === 'undefined' ? corData.country : data.country} - Active: {typeof data === 'undefined' ?  corData.active : data.active} , 
+      Died: {typeof data === 'undefined' ?  corData.deaths : data.deaths}, 
+      Total: {typeof data === 'undefined' ? corData.cases : data.cases}
     {:catch e}
-      {corData.country} - Active: {corData.active} , Died: {corData.deaths}
-
+      {corData.country} - Active: {corData.active} , Died: {corData.deaths}, 
+      Total: {corData.cases}
     {/await}
   </p>
 </div>

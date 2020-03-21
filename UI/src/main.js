@@ -13,7 +13,7 @@ import Text from './components/Text.svelte';
 const widgets = [{
   name: 'Corvd19Text',
   widget: Text,
-  top: 300,
+  top: 700,
   left: 100,
   style: {
     font: 'Alfa Slab One',
@@ -26,7 +26,7 @@ const widgets = [{
   }},{
   name: 'Corvid19-US',
   widget: Corvid19,
-  top: 380,
+  top: 780,
   left: 35,
   style: {
     font: 'Alfa Slab One',
@@ -39,7 +39,7 @@ const widgets = [{
   }},{
   name: 'Corvid19-Thailand',
   widget: Corvid19,
-  top: 340,
+  top: 740,
   left: 35,
   style: {
     font: 'Alfa Slab One',
