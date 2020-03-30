@@ -39,7 +39,11 @@
         hours = hours - 12;
         ampm = "pm";
       } else {
-        ampm = "am";
+        if(hours === 12) {
+          ampm = "pm";
+        } else {
+          ampm = "am";
+        }
       }
       if(minutes < 10) {
         zminutes = '0' + minutes.toString();
