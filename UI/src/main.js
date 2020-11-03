@@ -97,7 +97,7 @@ const widgets = [{
 }];
 
 const config = {
-  backgroundType: 'pic',
+  backgroundType: 'none',
   backgrounds: ['https://source.unsplash.com/random/1440x900?puppy', 
                 'https://source.unsplash.com/random/1440x900?kitten',
                 'https://source.unsplash.com/random/1440x900?glider',
@@ -111,9 +111,9 @@ const config = {
                      'background-color: #21D4FD; background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%)',
                      'background-color: #8EC5FC; background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%)',
                      'background: linear-gradient(to left top, blue, lightgreen)'],
-  random: true,
+  random: false,
   index: 0,
-  randomAll: true,
+  randomAll: false,
   update30: true
 };
 
