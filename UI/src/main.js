@@ -60,6 +60,7 @@ const widgets = [{
     color: 'lightblue'
   },
   config: {
+    key: '6d345f490e76035ffa407757',
     from: 'USD',
     to: 'THB',
     shadow: '1px 1px 0px black, 2px 2px 0px black, 3px 3px 0px black, 4px 4px 0px black, 5px 5px 0px black, 6px 6px 2px black'

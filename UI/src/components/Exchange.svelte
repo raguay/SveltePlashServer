@@ -49,12 +49,12 @@
     //
     // Get the current exchange rate.
     //
-    load = fetch('https://api.exchangeratesapi.io/latest?symbols=' + config.from + ',' + config.to)
+    load = fetch('https://v6.exchangerate-api.com/v6/' + config.key + '/latest/' + config.from)
     .then((response) => {
       return response.json();
     })
     .then((data) => {
-      savedAmount = round_to_precision(data.rates[config.to]/data.rates[config.from], 0.001).toString();
+      savedAmount = round_to_precision(data.conversion_rates[config.to], 0.001).toString();
       savedAmount = savedAmount.slice(0,5);
       return(savedAmount);
     });
